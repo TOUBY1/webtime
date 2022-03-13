@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=GND1 Pin=C4-1
+Added Pin To Net: NetName=GND1 Pin=C5-1
+Added Pin To Net: NetName=GND1 Pin=C8-1
+Added Pin To Net: NetName=GND1 Pin=J1-1
+Added Pin To Net: NetName=GND1 Pin=R6-1
+Added Pin To Net: NetName=GND1 Pin=U1-1
+Added Pin To Net: NetName=GND1 Pin=U2-2
+Added Member To Class: ClassName=Sheet1 Member=Component U1 OLED-30Pin
