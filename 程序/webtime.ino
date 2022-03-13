@@ -31,7 +31,7 @@ U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R2, /* reset=*/ U8X8_PIN_NONE);
 DYWiFiConfig wificonfig;
 ESP8266WebServer webserver(80);
 #define DEF_WIFI_SSID     "TOUBY"
-#define DEF_WIWI_PASSWORD "22272205"
+#define DEF_WIWI_PASSWORD "1111111"
 #define AP_NAME "ESP8266" //dev
 void wificb(int c)
 {
