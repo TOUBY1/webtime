@@ -1,20 +1,4 @@
-/* 本代码适用于ESP8266 NodeMCU + 12864显示屏
- * 7pin SPI引脚，正面看，从左到右依次为GND、VCC、D0、D1、RES、DC、CS
- *    ESP8266 ---  OLED
- *      3V    ---  VCC
- *      G     ---  GND
- *      D7    ---  D1
- *      D5    ---  D0
- *      D2orD8---  CS
- *      D1    ---  DC
- *      RST   ---  RES       GPIO3
- * 4pin IIC引脚，正面看，从左到右依次为GND、VCC、SCL、SDA
- *      ESP8266  ---  OLED
- *      3.3V     ---  VCC
- *      G (GND)  ---  GND
- *      D1(GPIO5)---  SCL
- *      D2(GPIO4)---  SDA
- */
+
 #include <Wire.h>
 #include <TimeLib.h>
 #include <ESP8266WiFi.h>
@@ -30,8 +14,8 @@ U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R2, /* reset=*/ U8X8_PIN_NONE);
 
 DYWiFiConfig wificonfig;
 ESP8266WebServer webserver(80);
-#define DEF_WIFI_SSID     "TOUBY"
-#define DEF_WIWI_PASSWORD "1111111"
+#define DEF_WIFI_SSID     "SSID"
+#define DEF_WIWI_PASSWORD "PASSWORD"
 #define AP_NAME "ESP8266" //dev
 void wificb(int c)
 {
